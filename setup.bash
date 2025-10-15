@@ -97,11 +97,12 @@ source .venv/bin/activate
 # Upgrade pip
 pip install --upgrade pip
 
-pip install wheel setuptools
+pip install wheel setuptools pyyaml typeguard
+pip install opencv-python==4.11.0.86
 pip install numpy==1.26.1
-pip install Cython==0.29.20
+pip install Cython==0.29.36
 
-pip install --no-build-isolation scikit-image==0.17.2
+pip install --no-build-isolation scikit-image==0.19.3
 pip install networkx==2.2
 
 # Install required Python packages
@@ -112,7 +113,7 @@ pip install torch==2.4.0 torchvision torchaudio
 
 pip install https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu118_pyt201/pytorch3d-0.7.4-cp310-cp310-linux_x86_64.whl
 
-pip install trimesh opencv-python wandb matplotlib imageio tqdm open3d ruamel.yaml sacred kornia pymongo jupyterlab ninja
+pip install trimesh wandb matplotlib imageio tqdm open3d ruamel.yaml sacred kornia pymongo jupyterlab ninja
 
 pip install pyrender PyOpenGL-accelerate
 
